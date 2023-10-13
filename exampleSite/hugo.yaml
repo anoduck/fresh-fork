@@ -6,14 +6,14 @@ module:
   # uncomment line below for local development of module
   # workspace: hugo.work
   imports:
-    path: github.com/anoduck/fresh-fork
+  - path: github.com/anoduck/fresh-fork
 
 
 googleAnalytics: # Put in your tracking code without quotes like this: UA-XXX for universal tracking or G-XXX analytics v4 tracking
 # Disables warnings
 disableKinds:
 - taxonomy
-- taxonomyTerm
+
 markup:
   goldmark:
     renderer:
