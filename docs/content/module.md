@@ -14,12 +14,12 @@ This provides several benefits for the development of this theme.
 
 ### Versioning / stable theme
 
-With modules it is possible to point to any git hash you like. Nevertheless, it is strongly recommended to only use a versionised version of this theme. Checkout the [GitHub Release page](https://github.com/StefMa/hugo-fresh/releases/) for the latest version.
+With modules it is possible to point to any git hash you like. Nevertheless, it is strongly recommended to only use a versionised version of this theme. Checkout the [GitHub Release page](https://github.com/anoduck/fresh-fork/releases/) for the latest version.
 
 You can run the follwing command to update/change the theme version:
 
 ```
-hugo mod get -u github.com/StefMa/hugo-fresh@v[SEMVER_VERSION]
+hugo mod get -u github.com/anoduck/fresh-fork@v[SEMVER_VERSION]
 ```
 
 There can be als an `hash` or an `branch` name after the `@`-sign.
@@ -39,5 +39,5 @@ A typical module name follows the following convention: `domain-name.tld/somethi
 ```yaml
 module:
   imports:
-    path: github.com/StefMa/hugo-fresh
+    path: github.com/anoduck/fresh-fork
 ```

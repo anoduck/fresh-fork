@@ -1,4 +1,4 @@
-module github.com/StefMa/hugo-fresh
+module github.com/anoduck/fresh-fork
 
 go 1.12
 

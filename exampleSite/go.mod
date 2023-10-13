@@ -1,7 +1,7 @@
-module github.com/StefMa/hugo-fresh/exampleSite
+module github.com/anoduck/fresh-fork/exampleSite
 
 go 1.12
 
-replace github.com/StefMa/hugo-fresh => ../
+replace github.com/anoduck/fresh-fork => ../
 
-require github.com/StefMa/hugo-fresh v1.0.0 // indirect
+require github.com/anoduck/fresh-fork v1.0.0 // indirect

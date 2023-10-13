@@ -9,7 +9,7 @@ include_footer: false
 
 **Fresh** is a theme for the [Hugo](https://gohugo.io) static site generator adapted from the gorgeous, [Bulma](https://bulma.io)-based theme of the same name from [CSS Ninja](https://cssninja.io/product/fresh). You can find a live demo of the original theme [here](https://fresh.cssninja.io) and a live demo of the Hugo theme [here](https://hugo-fresh.now.sh/).
 
-<img src="https://raw.githubusercontent.com/StefMa/hugo-fresh/master/images/screenshot.png" style="margin-left:auto;margin-right:auto;" />
+<img src="https://raw.githubusercontent.com/anoduck/fresh-fork/master/images/screenshot.png" style="margin-left:auto;margin-right:auto;" />
 
 ## Getting started
 
@@ -28,7 +28,7 @@ hugo mod init YOUR_MODULE_NAME
 rm config.toml
 
 # Fetch the example config
-curl -O https://raw.githubusercontent.com/StefMa/hugo-fresh/master/exampleSite/hugo.yaml
+curl -O https://raw.githubusercontent.com/anoduck/fresh-fork/master/exampleSite/hugo.yaml
 
 # Run the site locally
 hugo server
