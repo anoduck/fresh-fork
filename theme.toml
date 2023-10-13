@@ -1,12 +1,15 @@
 name = "Hugo Fresh"
 license = "MIT"
 licenselink = "https://github.com/anoduck/fresh-fork/blob/master/LICENSE.md"
-description = "A Hugo adaptation of the Fresh theme from CSS Ninja"
+description = "A fork of Stefan M. with darkness."
 homepage = "https://github.com/anoduck/fresh-fork"
-tags = ["responsive", "one page", "light", "onepage", "company", "clean", "landing page"]
+tags = ["responsive", "one page", "dark", "onepage", "company", "clean", "landing page"]
 features = []
 min_version = "0.45"
 
 [author]
   name = "Stefan M."
   homepage = "https://github.com/StefMa"
+[author]
+  name = "Anoduck"
+  homepage = "https://anoduck.com"
