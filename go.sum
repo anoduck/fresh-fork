@@ -1,2 +1,4 @@
 github.com/jgthms/bulma v0.0.0-20220508134905-3e00a8e6d0d0 h1:d61c8CjPFq6aGikBXMepfewc8/3IbrTCiC1xHcMcvHI=
 github.com/jgthms/bulma v0.0.0-20220508134905-3e00a8e6d0d0/go.mod h1:89FLBKXYFKfOKAoDeUT26V0pHGwzr205cMXAEqtAVOI=
+github.com/jloh/bulma-prefers-dark v0.1.0-beta.1 h1:zGsDXUI1CKJB6+AWziSVjr7hbzcV/uO6ydIK3MvWsW0=
+github.com/jloh/bulma-prefers-dark v0.1.0-beta.1/go.mod h1:b26u56ELmittT3zanpRggNzsXjVi+R0WxVVZbUIxkKU=
