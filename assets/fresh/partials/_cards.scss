@@ -32,7 +32,7 @@ Cards and Card content styles
         margin-top: 10px;
     }
     &.is-bordered {
-        border: 1px solid $fade-grey;
+        border: 1px solid $grey1-primary-4;
     }
 }
 
@@ -72,7 +72,7 @@ Cards and Card content styles
             }
             ul li a {
                 color: $grey-white;
-            }  
+            }
             ul li.is-active a {
                 color: $white;
                 border: 1px solid $white;
