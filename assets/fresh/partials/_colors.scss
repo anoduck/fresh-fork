@@ -31,55 +31,77 @@ $section-grey: #1C2528;
 
 // As hex codes */
 
-$color-primary-0: #09475F; // Main Primary color */
-$color-primary-1: #076C93;
-$color-primary-2: #0C5875;
-$color-primary-3: #033142;
-$color-primary-4: #021D27;
+$blue-primary-0: #09475F; // Main Primary blue */
+$blue-primary-1: #076C93;
+$blue-primary-2: #0C5875;
+$blue-primary-3: #033142;
+$blue-primary-4: #021D27;
 
-$color-secondary-1-0: #976E08; // Main Secondary color (1) */
-$color-secondary-1-1: #EBA702;
-$color-secondary-1-2: #BA880B;
-$color-secondary-1-3: #694B00;
-$color-secondary-1-4: #3E2C00;
+$yeller-secondary-1-0: #976E08; // Main Secondary yeller (1) */
+$yeller-secondary-1-1: #EBA702;
+$yeller-secondary-1-2: #BA880B;
+$yeller-secondary-1-3: #694B00;
+$yeller-secondary-1-4: #3E2C00;
 
-$color-secondary-2-0: #972108; // Main Secondary color (2) */
-$color-secondary-2-1: #EB2A02;
-$color-secondary-2-2: #BA2A0B;
-$color-secondary-2-3: #691200;
-$color-secondary-2-4: #3E0B00;
+$red-secondary-2-0: #972108; // Main Secondary red (2) */
+$red-secondary-2-1: #EB2A02;
+$red-secondary-2-2: #BA2A0B;
+$red-secondary-2-3: #691200;
+$red-secondary-2-4: #3E0B00;
 
-$color-complement-0: #975208; // Main Complement color */
-$color-complement-1: #EB7B02;
-$color-complement-2: #BA660B;
-$color-complement-3: #693700;
-$color-complement-4: #3E2000;
+$ernge-complement-0: #975208; // Main Complement ernge */
+$ernge-complement-1: #EB7B02;
+$ernge-complement-2: #BA660B;
+$ernge-complement-3: #693700;
+$ernge-complement-4: #3E2000;
 
 
 // THE Grays */
 
 // As hex codes */
+$grey1-primary-0: #161819; // Main Primary grey1 */
+$grey1-primary-1: #374A51;
+$grey1-primary-2: #2A3437;
+$grey1-primary-3: #1C2528;
+$grey1-primary-4: #1B2F36;
 
-$color-primary-0: #232627; // Main Primary color */
-$color-primary-1: #373D40;
-$color-primary-2: #2C3031;
-$color-primary-3: #1F2324;
-$color-primary-4: #161C1F;
+// As hex codes */
+$grey1-primary-0: #232526; // Main Primary grey1 */
+$grey1-primary-1: #373D3F;
+$grey1-primary-2: #2B2F31;
+$grey1-primary-3: #1F2324;
+$grey1-primary-4: #161C1F;
 
-$color-secondary-1-0: #3D3C37; // Main Secondary color (1) */
-$color-secondary-1-1: #646157;
-$color-secondary-1-2: #4E4C45;
-$color-secondary-1-3: #393731;
-$color-secondary-1-4: #312D22;
+$grey1-primary-0: #373A3B; // Main Primary grey1 */
+$grey1-primary-1: #424C50;
+$grey1-primary-2: #2E3132;
+$grey1-primary-3: #242829;
+$grey1-primary-4: #1A1D1E;
 
-$color-secondary-2-0: #3D3837; // Main Secondary color (2) */
-$color-secondary-2-1: #645A57;
-$color-secondary-2-2: #4E4745;
-$color-secondary-2-3: #393231;
-$color-secondary-2-4: #312622;
+// As hex codes */
 
-$color-complement-0: #3D3A37; // Main Complement color */
-$color-complement-1: #645E57;
-$color-complement-2: #4E4A45;
-$color-complement-3: #393531;
-$color-complement-4: #312A22;
+// Set #2 */
+
+$grey2-primary-0: #232627; // Main Primary grey2 */
+$grey2-primary-1: #373D40;
+$grey2-primary-2: #2C3031;
+$grey2-primary-3: #1F2324;
+$grey2-primary-4: #161C1F;
+
+$grey2-secondary-1-0: #3D3C37; // Main Secondary grey2 (1) */
+$grey2-secondary-1-1: #646157;
+$grey2-secondary-1-2: #4E4C45;
+$grey2-secondary-1-3: #393731;
+$grey2-secondary-1-4: #312D22;
+
+$grey2-secondary-2-0: #3D3837; // Main Secondary grey2 (2) */
+$grey2-secondary-2-1: #645A57;
+$grey2-secondary-2-2: #4E4745;
+$grey2-secondary-2-3: #393231;
+$grey2-secondary-2-4: #312622;
+
+$grey2-complement-0: #3D3A37; // Main Complement grey2 */
+$grey2-complement-1: #645E57;
+$grey2-complement-2: #4E4A45;
+$grey2-complement-3: #393531;
+$grey2-complement-4: #312A22;
