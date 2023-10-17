@@ -14,15 +14,19 @@
       {{- range $tiles }}
       <div class="columns">
         <div class="column is-two-third">
-          <div class="feature-card is-bordered has-text-right revealOnScroll delay-1" data-animation="fadeInLeft">
-            <div class="card-title">
-              <h4>{{ .title }}</h4>
+          <div class="card is-bordered has-text-right revealOnScroll delay-1" data-animation="fadeInLeft">
+            <div class="card-header">
+              <div class="card-title card-header-title">
+                <h4>{{ .title }}</h4>
+              </div>
+              <div class="card-icon card-header-icon">
+                  <img src="{{ printf "/images/illustrations/icons/%s.svg" .icon | relURL }}">
+              </div>
             </div>
-            <div class="card-icon">
-                <img src="{{ printf "/images/illustrations/icons/%s.svg" .icon | relURL }}">
-            </div>
-            <div class="card-text">
-                <p>{{ .text }}</p>
+            <div class="card-content">
+              <div class="card-text">
+                  <p>{{ .text }}</p>
+              </div>
             </div>
           </div>
         </div>
