@@ -2,32 +2,121 @@
 Color variables
 ========================================================================== */
 
-$white: #645A57;
-$smoke-white: #646157;
-$grey-white: #645E57;
+$primary: #510FAD;
+$secondary: #A101A6;
+$accent: #CFF700;
 
-$primary: #076C93;
-$secondary: #152BA0;
-$accent: #EAA702;
-
-$fade-grey: #373A3B;
-$light-grey: #424C50;
-$title-grey: #2E3132;
-$blue-grey: #2E3132;
-$muted-grey: #232526;
-$light-blue-grey: #373D3F;
-$medium-grey: #2B2F31;
-$basaltic-grey: #1F2324;
 $purple: #9F46B7;
 $mint: #AEED56;
 $bloody: #EB2A02;
 $pinky: #DF518F;
 $frost: #4593B0;
-$placeholder: #1B2F36;
-$dark-grey: #161819;
-$border-grey: #374A51;
-$muted-grey: #2A3437;
-$section-grey: #1C2528;
+$placeholder: #8C25A9;
+
+// 0
+$fade-grey: #646168;
+$light-grey: #635C64;	
+$title-grey: #929489;
+$blue-grey: #99988E;
+
+// 1
+$muted-grey: #736980;
+$light-blue-grey: #7A637B;
+$medium-grey: #B1B793;
+$basaltic-grey: #BDB998;
+
+// 3
+$dark-grey: #58545D;
+$border-grey: #595059;
+$muted-grey: #828476;
+$section-grey: #89877A;
+
+// 4
+$white: #DAD7DE;
+$smoke-white: #FAFCF3;	
+$grey-white: #FFFEF6;
+
+
+// SASS style sheet */
+// Palette color codes */
+// Palette URL: http://paletton.com/#uid=74s0u0k2ljc6hnI3vhb50fr6wdx */
+
+// Feel free to copy&paste color codes to your application */
+
+$color-primary-0: #510FAD;	// Main Primary color */
+$color-primary-1: #8356C2;
+$color-primary-2: #6834B2;
+$color-primary-3: #3E0B86;
+$color-primary-4: #300769;
+
+$color-secondary-1-0: #A101A6;	// Main Secondary color (1) */
+$color-secondary-1-1: #B94ABC;
+$color-secondary-1-2: #A727AC;
+$color-secondary-1-3: #7C0180;
+$color-secondary-1-4: #610065;
+
+$color-secondary-2-0: #CFF700;	// Main Secondary color (2) */
+$color-secondary-2-1: #E0F961;
+$color-secondary-2-2: #D8F737;
+$color-secondary-2-3: #A0BF00;
+$color-secondary-2-4: #7E9600;
+
+$color-complement-0: #FFE700;	// Main Complement color */
+$color-complement-1: #FFF063;
+$color-complement-2: #FFEC39;
+$color-complement-3: #C5B200;
+$color-complement-4: #9B8C00;
+
+
+// As hex codes */
+
+$grey-primary-0: #646168;	// Main Primary color */
+$grey-primary-1: #736980;
+$grey-primary-2: #58545D;
+$grey-primary-3: #4D4854;
+$grey-primary-4: #413C49;
+
+$grey-secondary-1-0: #635C64;	// Main Secondary color (1) */
+$grey-secondary-1-1: #7A637B;
+$grey-secondary-1-2: #595059;
+$grey-secondary-1-3: #504450;
+$grey-secondary-1-4: #463846;
+
+$grey-secondary-2-0: #929489;	// Main Secondary color (2) */
+$grey-secondary-2-1: #B1B793;
+$grey-secondary-2-2: #828476;
+$grey-secondary-2-3: #747764;
+$grey-secondary-2-4: #656853;
+
+$grey-complement-0: #99988E;	// Main Complement color */
+$grey-complement-1: #BDB998;
+$grey-complement-2: #89877A;
+$grey-complement-3: #7B7968;
+$grey-complement-4: #6C6A56;
+
+$color2-primary-0: #DAD7DE;	// Main Primary color */
+$color2-primary-1: #9F8FB6;
+$color2-primary-2: #B9ADC9;
+$color2-primary-3: #AAA5B1;
+$color2-primary-4: #96909E;
+
+$color2-secondary-1-0: #DBD3DB;	// Main Secondary color (1) */
+$color2-secondary-1-1: #AE87AF;
+$color2-secondary-1-2: #C3A7C4;
+$color2-secondary-1-3: #AA9EAB;
+$color2-secondary-1-4: #978998;
+
+$color2-secondary-2-0: #FAFCF3;	// Main Secondary color (2) */
+$color2-secondary-2-1: #EEF8BE;
+$color2-secondary-2-2: #F4FAD4;
+$color2-secondary-2-3: #F4F7E5;
+$color2-secondary-2-4: #DEE1CC;
+
+$color2-complement-0: #FFFEF6;	// Main Complement color */
+$color2-complement-1: #FFF9C4;
+$color2-complement-2: #FFFBD9;
+$color2-complement-3: #FFFDEC;
+$color2-complement-4: #E9E7D3;
 
 // SASS style sheet */
 // Palette color codes */
