@@ -6,9 +6,9 @@ $white: #645A57;
 $smoke-white: #646157;
 $grey-white: #645E57;
 
-$primary: #09475F;
-$secondary: #976E08;
-$accent: #972108;
+$primary: #076C93;
+$secondary: #152BA0;
+$accent: #EAA702;
 
 $fade-grey: #373A3B;
 $light-grey: #424C50;
@@ -18,17 +18,79 @@ $muted-grey: #232526;
 $light-blue-grey: #373D3F;
 $medium-grey: #2B2F31;
 $basaltic-grey: #1F2324;
-$purple: #390a8f;
-$mint: #046184;
+$purple: #9F46B7;
+$mint: #AEED56;
 $bloody: #EB2A02;
-$pinky: #BA2A0B;
-$frost: #004e92;
+$pinky: #DF518F;
+$frost: #4593B0;
 $placeholder: #1B2F36;
 $dark-grey: #161819;
 $border-grey: #374A51;
 $muted-grey: #2A3437;
 $section-grey: #1C2528;
 
+// SASS style sheet */
+// Palette color codes */
+// Palette URL: http://paletton.com/#uid=71+0u0kvNtpkpAwpRw5yZntF6ih */
+
+// Feel free to copy&paste color codes to your application */
+
+
+// As hex codes */
+
+#brights-primary-0: #D3E602;	// Main Primary color */
+#brights-primary-1: #EEFB5B;
+#brights-primary-2: #EAFB30;
+#brights-primary-3: #A8B800;
+#brights-primary-4: #838F00;
+
+#brights-secondary-1-0: #7DD701;	// Main Secondary color (1) */
+#brights-secondary-1-1: #AEED56;
+#brights-secondary-1-2: #9AEA2D;
+#brights-secondary-1-3: #63AB00;
+#brights-secondary-1-4: #4D8500;
+
+#brights-secondary-2-0: #C60158;	// Main Secondary color (2) */
+#brights-secondary-2-1: #DF518F;
+#brights-secondary-2-2: #D82A76;
+#brights-secondary-2-3: #9E0045;
+#brights-secondary-2-4: #7B0036;
+
+#brights-complement-0: #7A069B;	// Main Complement color */
+#brights-complement-1: #9F46B7;
+#brights-complement-2: #8C25A9;
+#brights-complement-3: #61047C;
+#brights-complement-4: #4C0260;
+
+
+// As hex codes */
+
+#mids-primary-0: #076C93;	// Main Primary color */
+#mids-primary-1: #4593B0;
+#mids-primary-2: #247EA0;
+#mids-primary-3: #045675;
+#mids-primary-4: #03435B;
+
+#mids-secondary-1-0: #152BA0;	// Main Secondary color (1) */
+#mids-secondary-1-1: #5364BC;
+#mids-secondary-1-2: #3347AF;
+#mids-secondary-1-3: #0F2180;
+#mids-secondary-1-4: #091764;
+
+#mids-secondary-2-0: #EAA702;	// Main Secondary color (2) */
+#mids-secondary-2-1: #FFD05D;
+#mids-secondary-2-2: #FFC431;
+#mids-secondary-2-3: #BB8500;
+#mids-secondary-2-4: #926800;
+
+#mids-complement-0: #EA7B02;	// Main Complement color */
+#mids-complement-1: #FFB15D;
+#mids-complement-2: #FF9C31;
+#mids-complement-3: #BB6100;
+#mids-complement-4: #924C00;
+
+
+// DARKS */
 // As hex codes */
 
 $blue-primary-0: #09475F; // Main Primary blue */
