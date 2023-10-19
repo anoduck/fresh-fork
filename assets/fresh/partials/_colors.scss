@@ -1,286 +1,119 @@
+// SASS style sheet */
+// Palette color codes */
+// Palette URL: http://paletton.com/#uid=74V0u0k2mbN5Ng038a33W8h4C62 */
+
+// Feel free to copy&paste color codes to your application */
+
+// As hex codes */
+
+// ---------------------------------------
+
+// Pink 
+$pink-0: #A001A6;	// Main Primary color */
+$pink-1: #B84ABC;
+$pink-2: #A727AB;
+$pink-3: #7C0180;
+$pink-4: #610065;
+
+$grey-pink-0: #3D393D;	// Main Primary grey */
+$grey-pink-1: #534453;
+$grey-pink-2: #342F34;
+$grey-pink-3: #2B262B;
+$grey-pink-4: #1F1B1F;
+
+$white-0: #DBD3DB;	// Main Primary color */
+$white-1: #AE87AF;
+$white-2: #C3A7C4;
+$white-3: #AA9EAB;
+$white-4: #978998;
+
+// ---------------------------------------
+
+//red
+$red-0: #E20048;	// Main Secondary color (1) */
+$red-1: #EA5B89;
+$red-2: #E4336C;
+$red-3: #AF0038;
+$red-4: #89002C;
+
+$grey-red-0: #534D4F;	// Main Secondary grey (1) */
+$grey-red-1: #715D63;
+$grey-red-2: #474042;
+$grey-red-3: #3A3336;
+$grey-red-4: #2B2526;
+
+// ------------------------------------------------
+
+//green
+$green-0: #6BE400;	// Main Secondary color (2) */
+$green-1: #9FEB5C;
+$green-2: #87E633;
+$green-3: #53B000;
+$green-4: #418A00;
+
+$grey-green-0: #51544E;	// Main Secondary grey (2) */
+$grey-green-1: #67725D;
+$grey-green-2: #444841;
+$grey-green-3: #373B34;
+$grey-green-4: #282B25;
+
+// -----------------------------------------------
+
+$yellow-0: #CFF700;	// Main Complement color */
+$yellow-1: #E0F961;
+$yellow-2: #D8F737;
+$yellow-3: #A0BE00;
+$yellow-4: #7E9600;
+
+$white-5: #FFFEF6;	// Main Primary color */
+$white-6: #C1BD98;
+$white-7: #D6D2B8;
+$white-8: #D4D2CA;
+$white-9: #BDBCB4;
+
+$grey-yellow-0: #5A5B54;	// Main Complement grey */
+$grey-yellow-1: #787B65;
+$grey-yellow-2: #4C4D46;
+$grey-yellow-3: #3E4038;
+$grey-yellow-4: #2D2E28;
+
 /* ==========================================================================
 Color variables
 ========================================================================== */
 
-$primary: #510FAD;
-$secondary: #A101A6;
-$accent: #CFF700;
+$primary: $pink-0;
+$secondary: $red-0;
+$accent: $yellow-0;
 
-$purple: #9F46B7;
-$mint: #AEED56;
-$bloody: #EB2A02;
-$pinky: #DF518F;
+$purple: $pink-3;
+$mint: $green-1;
+$bloody: $red-1;
+$pinky: $pink-1;
 $frost: #4593B0;
-$placeholder: #8C25A9;
+$placeholder: $yellow-1;
 
 // 0
-$fade-grey: #646168;
-$light-grey: #635C64;	
-$title-grey: #929489;
-$blue-grey: #99988E;
+$fade-grey: $grey-pink-0;
+$light-grey: $grey-red-0;	
+$title-grey: $white-6;
+$blue-grey: $grey-yellow-1;
 
 // 1
-// $muted-grey: #736980;
-$light-blue-grey: #7A637B;
-$medium-grey: #B1B793;
-$basaltic-grey: #BDB998;
+$light-blue-grey: $white-7;
+$medium-grey: $grey-pink-1;
+$basaltic-grey: $grey-red-1;
 
 // 3
-$dark-grey: #58545D;
-$border-grey: #595059;
-$muted-grey: #828476;
-$section-grey: #645E57;
+$dark-grey: $grey-pink-2;
+$border-grey: $grey-red-2;
+$muted-grey: $white-2;
+$section-grey: $grey-yellow-2;
 
-// 4
-$white: #DAD7DE;
-$smoke-white: #FAFCF3;	
-$grey-white: #FFFEF6;
+// 4 
+$white: $white-0;
+$smoke-white: $white-1;	
+$grey-white: $white-2;
 
-$dark-khaki: #99988E;
-
-// SASS style sheet */
-// Palette color codes */
-// Palette URL: http://paletton.com/#uid=74s0u0k2ljc6hnI3vhb50fr6wdx */
-
-// Feel free to copy&paste color codes to your application */
-
-$color-primary-0: #510FAD;	// Main Primary color */
-$color-primary-1: #8356C2;
-$color-primary-2: #6834B2;
-$color-primary-3: #3E0B86;
-$color-primary-4: #300769;
-
-$color-secondary-1-0: #A101A6;	// Main Secondary color (1) */
-$color-secondary-1-1: #B94ABC;
-$color-secondary-1-2: #A727AC;
-$color-secondary-1-3: #7C0180;
-$color-secondary-1-4: #610065;
-
-$color-secondary-2-0: #CFF700;	// Main Secondary color (2) */
-$color-secondary-2-1: #E0F961;
-$color-secondary-2-2: #D8F737;
-$color-secondary-2-3: #A0BF00;
-$color-secondary-2-4: #7E9600;
-
-$color-complement-0: #FFE700;	// Main Complement color */
-$color-complement-1: #FFF063;
-$color-complement-2: #FFEC39;
-$color-complement-3: #C5B200;
-$color-complement-4: #9B8C00;
-
-
-// As hex codes */
-
-$grey-primary-0: #646168;	// Main Primary color */
-$grey-primary-1: #736980;
-$grey-primary-2: #58545D;
-$grey-primary-3: #4D4854;
-$grey-primary-4: #413C49;
-
-$grey-secondary-1-0: #635C64;	// Main Secondary color (1) */
-$grey-secondary-1-1: #7A637B;
-$grey-secondary-1-2: #595059;
-$grey-secondary-1-3: #504450;
-$grey-secondary-1-4: #463846;
-
-$grey-secondary-2-0: #929489;	// Main Secondary color (2) */
-$grey-secondary-2-1: #B1B793;
-$grey-secondary-2-2: #828476;
-$grey-secondary-2-3: #747764;
-$grey-secondary-2-4: #656853;
-
-$grey-complement-0: #99988E;	// Main Complement color */
-$grey-complement-1: #BDB998;
-$grey-complement-2: #89877A;
-$grey-complement-3: #7B7968;
-$grey-complement-4: #6C6A56;
-
-$color2-primary-0: #DAD7DE;	// Main Primary color */
-$color2-primary-1: #9F8FB6;
-$color2-primary-2: #B9ADC9;
-$color2-primary-3: #AAA5B1;
-$color2-primary-4: #96909E;
-
-$color2-secondary-1-0: #DBD3DB;	// Main Secondary color (1) */
-$color2-secondary-1-1: #AE87AF;
-$color2-secondary-1-2: #C3A7C4;
-$color2-secondary-1-3: #AA9EAB;
-$color2-secondary-1-4: #978998;
-
-$color2-secondary-2-0: #FAFCF3;	// Main Secondary color (2) */
-$color2-secondary-2-1: #EEF8BE;
-$color2-secondary-2-2: #F4FAD4;
-$color2-secondary-2-3: #F4F7E5;
-$color2-secondary-2-4: #DEE1CC;
-
-$color2-complement-0: #FFFEF6;	// Main Complement color */
-$color2-complement-1: #FFF9C4;
-$color2-complement-2: #FFFBD9;
-$color2-complement-3: #FFFDEC;
-$color2-complement-4: #E9E7D3;
-
-// SASS style sheet */
-// Palette color codes */
-// Palette URL: http://paletton.com/#uid=71+0u0kvNtpkpAwpRw5yZntF6ih */
-
-// Feel free to copy&paste color codes to your application */
-
-
-// As hex codes */
-
-$brights-primary-0: #D3E602;	// Main Primary color */
-$brights-primary-1: #EEFB5B;
-$brights-primary-2: #EAFB30;
-$brights-primary-3: #A8B800;
-$brights-primary-4: #838F00;
-
-$brights-secondary-1-0: #7DD701;	// Main Secondary color (1) */
-$brights-secondary-1-1: #AEED56;
-$brights-secondary-1-2: #9AEA2D;
-$brights-secondary-1-3: #63AB00;
-$brights-secondary-1-4: #4D8500;
-
-$brights-secondary-2-0: #C60158;	// Main Secondary color (2) */
-$brights-secondary-2-1: #DF518F;
-$brights-secondary-2-2: #D82A76;
-$brights-secondary-2-3: #9E0045;
-$brights-secondary-2-4: #7B0036;
-
-$brights-complement-0: #7A069B;	// Main Complement color */
-$brights-complement-1: #9F46B7;
-$brights-complement-2: #8C25A9;
-$brights-complement-3: #61047C;
-$brights-complement-4: #4C0260;
-
-
-// As hex codes */
-
-$mids-primary-0: #076C93;	// Main Primary color */
-$mids-primary-1: #4593B0;
-$mids-primary-2: #247EA0;
-$mids-primary-3: #045675;
-$mids-primary-4: #03435B;
-
-$mids-secondary-1-0: #152BA0;	// Main Secondary color (1) */
-$mids-secondary-1-1: #5364BC;
-$mids-secondary-1-2: #3347AF;
-$mids-secondary-1-3: #0F2180;
-$mids-secondary-1-4: #091764;
-
-$mids-secondary-2-0: #EAA702;	// Main Secondary color (2) */
-$mids-secondary-2-1: #FFD05D;
-$mids-secondary-2-2: #FFC431;
-$mids-secondary-2-3: #BB8500;
-$mids-secondary-2-4: #926800;
-
-$mids-complement-0: #EA7B02;	// Main Complement color */
-$mids-complement-1: #FFB15D;
-$mids-complement-2: #FF9C31;
-$mids-complement-3: #BB6100;
-$mids-complement-4: #924C00;
-
-
-// DARKS */
-// As hex codes */
-
-$blue-primary-0: #09475F; // Main Primary blue */
-$blue-primary-1: #076C93;
-$blue-primary-2: #0C5875;
-$blue-primary-3: #033142;
-$blue-primary-4: #021D27;
-
-$yeller-secondary-1-0: #976E08; // Main Secondary yeller (1) */
-$yeller-secondary-1-1: #EBA702;
-$yeller-secondary-1-2: #BA880B;
-$yeller-secondary-1-3: #694B00;
-$yeller-secondary-1-4: #3E2C00;
-
-$red-secondary-2-0: #972108; // Main Secondary red (2) */
-$red-secondary-2-1: #EB2A02;
-$red-secondary-2-2: #BA2A0B;
-$red-secondary-2-3: #691200;
-$red-secondary-2-4: #3E0B00;
-
-$ernge-complement-0: #975208; // Main Complement ernge */
-$ernge-complement-1: #EB7B02;
-$ernge-complement-2: #BA660B;
-$ernge-complement-3: #693700;
-$ernge-complement-4: #3E2000;
-
-//The Blues */
-// As hex codes */
-
-$mustard-primary-0: #674900; // Main Primary mustard */
-$mustard-primary-1: #412F02;
-$mustard-primary-2: #4F3800;
-$mustard-primary-3: #9B6E00;
-$mustard-primary-4: #D39600;
-
-$purp-secondary-1-0: #1B0546; // Main Secondary purp (1) */
-$purp-secondary-1-1: #13052C;
-$purp-secondary-1-2: #150436;
-$purp-secondary-1-3: #2A086A;
-$purp-secondary-1-4: #380A90;
-
-$teal-secondary-2-0: #022F40; // Main Secondary teal (2) */
-$teal-secondary-2-1: #031E29;
-$teal-secondary-2-2: #012432;
-$teal-secondary-2-3: #034761;
-$teal-secondary-2-4: #046184;
-
-$indigo-complement-0: #061046; // Main Complement indigo */
-$indigo-complement-1: #060C2C;
-$indigo-complement-2: #050D36;
-$indigo-complement-3: #0B1A6A;
-$indigo-complement-4: #0D2290;
-
-
-// THE Grays */
-
-// As hex codes */
-$grey1-primary-0: #161819; // Main Primary grey1 */
-$grey1-primary-1: #374A51;
-$grey1-primary-2: #2A3437;
-$grey1-primary-3: #1C2528;
-$grey1-primary-4: #1B2F36;
-
-// As hex codes */
-$grey1-primary-0: #232526; // Main Primary grey1 */
-$grey1-primary-1: #373D3F;
-$grey1-primary-2: #2B2F31;
-$grey1-primary-3: #1F2324;
-$grey1-primary-4: #161C1F;
-
-$grey1-primary-0: #373A3B; // Main Primary grey1 */
-$grey1-primary-1: #424C50;
-$grey1-primary-2: #2E3132;
-$grey1-primary-3: #242829;
-$grey1-primary-4: #1A1D1E;
-
-// As hex codes */
-
-// Set #2 */
-
-$grey2-primary-0: #232627; // Main Primary grey2 */
-$grey2-primary-1: #373D40;
-$grey2-primary-2: #2C3031;
-$grey2-primary-3: #1F2324;
-$grey2-primary-4: #161C1F;
-
-$grey2-secondary-1-0: #3D3C37; // Main Secondary grey2 (1) */
-$grey2-secondary-1-1: #646157;
-$grey2-secondary-1-2: #4E4C45;
-$grey2-secondary-1-3: #393731;
-$grey2-secondary-1-4: #312D22;
-
-$grey2-secondary-2-0: #3D3837; // Main Secondary grey2 (2) */
-$grey2-secondary-2-1: #645A57;
-$grey2-secondary-2-2: #4E4745;
-$grey2-secondary-2-3: #393231;
-$grey2-secondary-2-4: #312622;
-
-$grey2-complement-0: #3D3A37; // Main Complement grey2 */
-$grey2-complement-1: #645E57;
-$grey2-complement-2: #4E4A45;
-$grey2-complement-3: #393531;
-$grey2-complement-4: #312A22;
+$dark-khaki: $grey-green-1;
+$grey2-secondary-1-2: $grey-red-2;
+$grey1-primary-4: $grey-pink-4;
