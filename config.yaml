@@ -30,15 +30,3 @@ module:
     mounts:
     - source: bulma-prefers-dark.sass
       target: assets/bulma-prefers-dark/bulma-prefers-dark.sass
-    - source: sass
-      target: assets/bulma-prefers-dark/sass
-    - source: sass/base
-      target: assets/bulma-prefers-dark/sass/base
-    - source: sass/components
-      target: assets/bulma-prefers-dark/sass/components
-    - source: sass/elements
-      target: assets/bulma-prefers-dark/sass/elements
-    - source: sass/layout
-      target: assets/bulma-prefers-dark/sass/layout
-    - source: sass/utilities
-      target: assets/bulma-prefers-dark/sass/utilities

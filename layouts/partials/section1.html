@@ -1,7 +1,7 @@
 {{- $section1 := .Site.Params.section1 }}
 {{- $title    := index $section1 "title" }}
 {{- $subtitle := index $section1 "subtitle" }}
-{{- $tiles    := index $section1 "tiles" }}
+<!-- {{- $tiles    := index $section1 "tiles" }} -->
 {{- $buttonLink := index $section1 "buttonLink"}}
 {{- $buttonText := index $section1 "buttonText"}}
 <section class="section section-feature-grey is-medium" id="section1">
@@ -13,7 +13,8 @@
     </div>
 
     <div class="content-wrapper">
-      {{- range $tiles }}
+      <!-- {{- range $tiles }} -->
+      {{- range (.Site.GetPage "type" "card").Pages}}
       <div class="columns">
         <div class="column is-two-third">
           <div class="card is-bordered has-text-left revealOnScroll delay-1" data-animation="fadeInLeft">
