@@ -11,7 +11,7 @@ Section Styles
         background-color: $section-grey;
     }
     &.section-secondary {
-        background-color: $grey2-secondary-1-2;
+        background-color: $grey-red-2;
     }
     &.section-half {
         height: 75vh !important;
@@ -22,7 +22,7 @@ Section Styles
     }
     .subtitle {
         &.is-muted {
-            color: $muted-grey;
+            color: $white-1;
         }
     }
 }
@@ -72,7 +72,7 @@ img.pushed-image {
             display: block;
         }
         .icon-box-title {
-            color: $blue-grey;
+            color: $white-3;
             font-size: 1.2rem;
             font-weight: 600;
         }

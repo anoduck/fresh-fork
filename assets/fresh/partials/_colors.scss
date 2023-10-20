@@ -1,134 +1,119 @@
+// SASS style sheet */
+// Palette color codes */
+// Palette URL: http://paletton.com/#uid=74V0u0k2mbN5Ng038a33W8h4C62 */
+
+// Feel free to copy&paste color codes to your application */
+
+// As hex codes */
+
+// ---------------------------------------
+
+// Pink 
+$pink-0: #A001A6;	// Main Primary color */
+$pink-1: #B84ABC;
+$pink-2: #A727AB;
+$pink-3: #7C0180;
+$pink-4: #610065;
+
+$grey-pink-0: #3D393D;	// Main Primary grey */
+$grey-pink-1: #534453;
+$grey-pink-2: #342F34;
+$grey-pink-3: #2B262B;
+$grey-pink-4: #1F1B1F;
+
+$white-0: #DBD3DB;	// Main Primary color */
+$white-1: #AE87AF;
+$white-2: #C3A7C4;
+$white-3: #AA9EAB;
+$white-4: #978998;
+
+// ---------------------------------------
+
+//red
+$red-0: #E20048;	// Main Secondary color (1) */
+$red-1: #EA5B89;
+$red-2: #E4336C;
+$red-3: #AF0038;
+$red-4: #89002C;
+
+$grey-red-0: #534D4F;	// Main Secondary grey (1) */
+$grey-red-1: #715D63;
+$grey-red-2: #474042;
+$grey-red-3: #3A3336;
+$grey-red-4: #2B2526;
+
+// ------------------------------------------------
+
+//green
+$green-0: #6BE400;	// Main Secondary color (2) */
+$green-1: #9FEB5C;
+$green-2: #87E633;
+$green-3: #53B000;
+$green-4: #418A00;
+
+$grey-green-0: #51544E;	// Main Secondary grey (2) */
+$grey-green-1: #67725D;
+$grey-green-2: #444841;
+$grey-green-3: #373B34;
+$grey-green-4: #282B25;
+
+// -----------------------------------------------
+
+$yellow-0: #CFF700;	// Main Complement color */
+$yellow-1: #E0F961;
+$yellow-2: #D8F737;
+$yellow-3: #A0BE00;
+$yellow-4: #7E9600;
+
+$white-5: #FFFEF6;	// Main Primary color */
+$white-6: #C1BD98;
+$white-7: #D6D2B8;
+$white-8: #D4D2CA;
+$white-9: #BDBCB4;
+
+$grey-yellow-0: #5A5B54;	// Main Complement grey */
+$grey-yellow-1: #787B65;
+$grey-yellow-2: #4C4D46;
+$grey-yellow-3: #3E4038;
+$grey-yellow-4: #2D2E28;
+
 /* ==========================================================================
 Color variables
 ========================================================================== */
 
-$white: #645A57;
-$smoke-white: #646157;
-$grey-white: #645E57;
+$primary: $pink-0;
+$secondary: $red-0;
+$accent: $yellow-0;
 
-$primary: #09475F;
-$secondary: #976E08;
-$accent: #972108;
+$purple: $pink-3;
+$mint: $green-1;
+$bloody: $red-1;
+$pinky: $pink-1;
+$frost: #4593B0;
+$placeholder: $yellow-1;
 
-$fade-grey: #373A3B;
-$light-grey: #424C50;
-$title-grey: #2E3132;
-$blue-grey: #2E3132;
-$muted-grey: #232526;
-$light-blue-grey: #373D3F;
-$medium-grey: #2B2F31;
-$basaltic-grey: #1F2324;
-$purple: #390a8f;
-$mint: #046184;
-$bloody: #EB2A02;
-$pinky: #BA2A0B;
-$frost: #004e92;
-$placeholder: #1B2F36;
-$dark-grey: #161819;
-$border-grey: #374A51;
-$muted-grey: #2A3437;
-$section-grey: #1C2528;
+// 0
+$fade-grey: $grey-pink-0;
+$light-grey: $grey-red-0;	
+$title-grey: $white-6;
+$blue-grey: $grey-yellow-1;
 
-// As hex codes */
+// 1
+$light-blue-grey: $white-7;
+$medium-grey: $grey-pink-1;
+$basaltic-grey: $grey-red-1;
 
-$blue-primary-0: #09475F; // Main Primary blue */
-$blue-primary-1: #076C93;
-$blue-primary-2: #0C5875;
-$blue-primary-3: #033142;
-$blue-primary-4: #021D27;
+// 3
+$dark-grey: $grey-pink-2;
+$border-grey: $grey-red-2;
+$muted-grey: $white-2;
+$section-grey: $grey-yellow-2;
 
-$yeller-secondary-1-0: #976E08; // Main Secondary yeller (1) */
-$yeller-secondary-1-1: #EBA702;
-$yeller-secondary-1-2: #BA880B;
-$yeller-secondary-1-3: #694B00;
-$yeller-secondary-1-4: #3E2C00;
+// 4 
+$white: $white-0;
+$smoke-white: $white-1;	
+$grey-white: $white-2;
 
-$red-secondary-2-0: #972108; // Main Secondary red (2) */
-$red-secondary-2-1: #EB2A02;
-$red-secondary-2-2: #BA2A0B;
-$red-secondary-2-3: #691200;
-$red-secondary-2-4: #3E0B00;
-
-$ernge-complement-0: #975208; // Main Complement ernge */
-$ernge-complement-1: #EB7B02;
-$ernge-complement-2: #BA660B;
-$ernge-complement-3: #693700;
-$ernge-complement-4: #3E2000;
-
-//The Blues */
-// As hex codes */
-
-$mustard-primary-0: #674900; // Main Primary mustard */
-$mustard-primary-1: #412F02;
-$mustard-primary-2: #4F3800;
-$mustard-primary-3: #9B6E00;
-$mustard-primary-4: #D39600;
-
-$purp-secondary-1-0: #1B0546; // Main Secondary purp (1) */
-$purp-secondary-1-1: #13052C;
-$purp-secondary-1-2: #150436;
-$purp-secondary-1-3: #2A086A;
-$purp-secondary-1-4: #380A90;
-
-$teal-secondary-2-0: #022F40; // Main Secondary teal (2) */
-$teal-secondary-2-1: #031E29;
-$teal-secondary-2-2: #012432;
-$teal-secondary-2-3: #034761;
-$teal-secondary-2-4: #046184;
-
-$indigo-complement-0: #061046; // Main Complement indigo */
-$indigo-complement-1: #060C2C;
-$indigo-complement-2: #050D36;
-$indigo-complement-3: #0B1A6A;
-$indigo-complement-4: #0D2290;
-
-
-// THE Grays */
-
-// As hex codes */
-$grey1-primary-0: #161819; // Main Primary grey1 */
-$grey1-primary-1: #374A51;
-$grey1-primary-2: #2A3437;
-$grey1-primary-3: #1C2528;
-$grey1-primary-4: #1B2F36;
-
-// As hex codes */
-$grey1-primary-0: #232526; // Main Primary grey1 */
-$grey1-primary-1: #373D3F;
-$grey1-primary-2: #2B2F31;
-$grey1-primary-3: #1F2324;
-$grey1-primary-4: #161C1F;
-
-$grey1-primary-0: #373A3B; // Main Primary grey1 */
-$grey1-primary-1: #424C50;
-$grey1-primary-2: #2E3132;
-$grey1-primary-3: #242829;
-$grey1-primary-4: #1A1D1E;
-
-// As hex codes */
-
-// Set #2 */
-
-$grey2-primary-0: #232627; // Main Primary grey2 */
-$grey2-primary-1: #373D40;
-$grey2-primary-2: #2C3031;
-$grey2-primary-3: #1F2324;
-$grey2-primary-4: #161C1F;
-
-$grey2-secondary-1-0: #3D3C37; // Main Secondary grey2 (1) */
-$grey2-secondary-1-1: #646157;
-$grey2-secondary-1-2: #4E4C45;
-$grey2-secondary-1-3: #393731;
-$grey2-secondary-1-4: #312D22;
-
-$grey2-secondary-2-0: #3D3837; // Main Secondary grey2 (2) */
-$grey2-secondary-2-1: #645A57;
-$grey2-secondary-2-2: #4E4745;
-$grey2-secondary-2-3: #393231;
-$grey2-secondary-2-4: #312622;
-
-$grey2-complement-0: #3D3A37; // Main Complement grey2 */
-$grey2-complement-1: #645E57;
-$grey2-complement-2: #4E4A45;
-$grey2-complement-3: #393531;
-$grey2-complement-4: #312A22;
+$dark-khaki: $grey-green-1;
+$grey2-secondary-1-2: $grey-red-2;
+$grey1-primary-4: $grey-pink-4;

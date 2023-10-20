@@ -2,6 +2,8 @@
 {{- $title    := index $section1 "title" }}
 {{- $subtitle := index $section1 "subtitle" }}
 {{- $tiles    := index $section1 "tiles" }}
+{{- $buttonLink := index $section1 "buttonLink"}}
+{{- $buttonText := index $section1 "buttonText"}}
 <section class="section section-feature-grey is-medium" id="section1">
   <div class="container">
     <div class="title-wrapper has-text-centered">
@@ -11,23 +13,32 @@
     </div>
 
     <div class="content-wrapper">
+      {{- range $tiles }}
       <div class="columns">
-        {{- range $tiles }}
         <div class="column is-two-third">
-          <div class="feature-card is-bordered has-text-right revealOnScroll delay-1" data-animation="fadeInLeft">
-            <div class="card-title">
-              <h4>{{ .title }}</h4>
+          <div class="card is-bordered has-text-left revealOnScroll delay-1" data-animation="fadeInLeft">
+            <div class="card-header">
+              <div class="card-title card-header-title">
+                <h4>{{ .title }}</h4>
+              </div>
+              <div class="card-icon card-header-icon">
+                  <img src="{{ printf "/images/icons/%s.svg" .icon | relURL }}">
+              </div>
             </div>
-            <div class="card-icon">
-                <img src="{{ printf "/images/illustrations/icons/%s.svg" .icon | relURL }}">
-            </div>
-            <div class="card-text">
-                <p>{{ .text }}</p>
+            <div class="card-content">
+              <div class="card-text">
+                  <p>{{ .text }}</p>
+              </div>
             </div>
           </div>
         </div>
-        {{- end }}
       </div>
+      {{- end }}
+      <p class="has-text-centered mt-20">
+          <a class="button cta is-large rounded secondary-btn raised" href="{{ $buttonLink }}">
+            {{ $buttonText }}
+          </a>
+      </p>
     </div>
   </div>
 </section>

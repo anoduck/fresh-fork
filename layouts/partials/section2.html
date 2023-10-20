@@ -2,6 +2,8 @@
 {{- $title    := index $section2 "title" }}
 {{- $subtitle := index $section2 "subtitle" }}
 {{- $features := index $section2 "features" }}
+{{- $buttonText := index $section2 "buttontext" }}
+{{- $buttonLink := index $section2 "buttonlink" }}
 <section class="section is-medium" id="section2">
   <div class="container">
     <div class="columns">
@@ -29,6 +31,11 @@
           </div>
         </article>
         {{- end }}
+        <p class="has-text-centered mt-20">
+          <a class="button cta is-large rounded secondary-btn raised" href="{{ $buttonLink }}">
+            {{ $buttonText }}
+          </a>
+        </p>
       </div>
     </div>
   </div>
