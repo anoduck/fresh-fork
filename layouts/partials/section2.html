@@ -1,6 +1,4 @@
-{{- $section2 := .Site.Params.section2 }}
-{{- $jpg := "jpg" }}
-{{- $png := "png" }}
+{{/*  {{- $section2 := .Site.Params.section2 }}  */}}
 <section class="section is-medium" id="section2">
   <div class="container">
     <div class="columns">
@@ -10,28 +8,27 @@
         <div class="card">
           <div class="card-image">
             <figure class="image is-4by3">
-              <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+              {{ with .image }}
+              <img src="{{ .src }}" alt="{{ .alt }}">
+              {{ end }}
             </figure>
           </div>
         </div>
       </div>
       <div class="column is-7 mt-60">
-        {{/*  {{- range $features }}  */}}
         <article class="media icon-box">
-          <figure class="media-left">
-            <p class="image">
-              {{/*  <img src="{{ printf "/images/illustrations/icons/%s.svg" .icon | relURL }}">  */}}
-            </p>
-          </figure>
           <div class="media-content mt-50">
+            {{ with .iconbox }}
+            <h3 class="icon-box-title title is-5">{{ .title }}</h3>
+            <div class="divider"></div>
             <div class="content">
               <p>
                 {{ with .content }}<p>{{ . | safeHTML }}</p>{{ end }}
               </p>
             </div>
+            {{ end }}
           </div>
         </article>
-        {{/*  {{- end }}  */}}
         <p class="has-text-centered mt-20">
           {{ with .button }}
             <a class="button cta is-large rounded secondary-btn raised" href="{{ .link }}">
