@@ -12,7 +12,7 @@
     {{/*  {{ partial "section2.html" . }}  */}}
     {{/*  {{ end }}  */}}
 
-    {{ partial "section2" site.Data.section2 }}
+    {{ partial "section2.html" site.Data.section2 }}
 
     {{ if .Site.Params.section3 }}
     {{ partial "section3.html" . }}
@@ -30,8 +30,8 @@
     {{ partial "footer.html" . }}
     {{ end }}
 
-    {{ if .Site.Params.sidebar }}
+    {{/*  {{ if .Site.Params.sidebar }}
     {{ partial "sidebar.html" . }}
-    {{ end }}
-    
+    {{ end }}  */}}
+
 {{ end }}
