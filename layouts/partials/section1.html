@@ -1,17 +1,12 @@
-{{- $section1 := .Site.Params.section1 }}
-{{- $title    := index $section1 "title" }}
-{{- $subtitle := index $section1 "subtitle" }}
-{{- $tiles    := index $section1 "tiles" }}
-{{- $buttonLink := index $section1 "buttonLink"}}
-{{- $buttonText := index $section1 "buttonText"}}
+{{- $file := . -}}
+{{- $tiles := $file.tiles -}}
 <section class="section section-feature-grey is-medium" id="section1">
   <div class="container">
     <div class="title-wrapper has-text-centered">
-      <h2 class="title is-2">{{ $title }}</h2>
-      <h3 class="subtitle is-5 is-muted">{{ $subtitle }}</h3>
+      {{ with .title }}<h2 class="title is-2">{{ . }}</h2>{{ end }}
+      {{ with .subtitle }}<h3 class="subtitle is-5 is-muted">{{ . }}</h3>{{ end }}
       <div class="divider is-centered"></div>
     </div>
-
     <div class="content-wrapper">
       {{- range $tiles }}
       <div class="columns">
@@ -21,24 +16,26 @@
               <div class="card-title card-header-title">
                 <h4>{{ .title }}</h4>
               </div>
-              <div class="card-icon card-header-icon">
+              <!-- <div class="card-icon card-header-icon">
                   <img src="{{ printf "/images/%s.png" .icon | relURL }}">
-              </div>
+              </div> -->
             </div>
             <div class="card-content">
               <div class="card-text">
-                  <p>{{ .text }}</p>
+                  <p>{{ .content }}</p>
               </div>
             </div>
           </div>
         </div>
       </div>
       {{- end }}
+      {{ with .button}}
       <p class="has-text-centered mt-20">
-          <a class="button cta is-large rounded secondary-btn raised" href="{{ $buttonLink }}">
-            {{ $buttonText }}
+          <a class="button cta is-large rounded secondary-btn raised" href="{{ .link }}">
+            {{ .text }}
           </a>
       </p>
+      {{ end }}
     </div>
   </div>
 </section>
