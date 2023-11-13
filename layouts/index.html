@@ -3,11 +3,7 @@
     {{ if .Site.Params.hero }}
     {{ partial "hero.html" . }}
     {{ end }}
-
-    {{/* {{ if .Site.Params.section1 }}
-    {{ partial "section1.html" . }}
-    {{ end }} */}}
-
+    
     {{ partial "section1" site.Data.section1 }}
 
     {{ partial "section2" site.Data.section2 }}
@@ -32,8 +28,8 @@
     {{ partial "footer.html" . }}
     {{ end }}
 
-    {{/*  {{ if .Site.Params.sidebar }}
+    {{ if .Site.Params.sidebar }}
     {{ partial "sidebar.html" . }}
-    {{ end }}  */}}
+    {{ end }}
 
 {{ end }}
