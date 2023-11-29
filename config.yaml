@@ -42,3 +42,7 @@ module:
       target: assets/bulma-prefers-dark/sass/layout
     - source: sass/utilities
       target: assets/bulma-prefers-dark/sass/utilities
+  - path: github.com/Wikiki/bulma-timeline
+    mounts:
+    - source: dist/css/bulma-timeline.sass
+      target: assets/bulma-timeline/bulma-timeline.sass
