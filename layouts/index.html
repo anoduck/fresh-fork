@@ -6,6 +6,8 @@
     
     {{ partial "section1" site.Data.section1 }}
 
+    {{ partial "section8" site.Data.section8 }}
+
     {{ partial "section2" site.Data.section2 }}
 
     {{ partial "section6" site.Data.section6 }}
@@ -18,9 +20,11 @@
 
     {{ partial "timeline.html" site.Data.timeline }}
 
-    {{ if .Site.Params.section4 }}
+    {{ partial "section9" site.Data.section9 }}
+
+    <!-- {{ if .Site.Params.section4 }}
     {{ partial "section4.html" . }}
-    {{ end }}
+    {{ end }} -->
 
     {{/*  {{ if .Site.Params.section5 }}
     {{ partial "section5.html" . }}
