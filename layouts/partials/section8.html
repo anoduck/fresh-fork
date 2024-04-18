@@ -1,47 +1,54 @@
-{{/*  {{- $section8 := .Site.Params.section8 }}  */}}
 <section class="section section-secondary is-medium" id="section8">
   <div class="container">
+    <div class="title-wrapper has-text-centered">
+      {{ with .banner }}
+      <h2 class="title is-2">{{ .title }}</h2>
+      <h3 class="subtitle is-5 is-muted">{{ .subtitle }}</h3>
+      <div class="divider is-centered"></div>
+      {{ end }}
+    </div>
+    <!-- Yes, I am this old...it is sad, isn't it. -->
+    <br>
+    <br>
+    <br>
     <div class="columns">
       <!-- Column One -->
       <div class="column is-centered-tablet-portrait">
-        {{ with .title1 }}<h1 class="title section-title">{{ . }}</h1>{{ end }}
-        {{/*  <h3 class="subtitle is-5 is-muted">{{ $subtitle }}</h3>  */}}
+        {{ with .photo1 }}
+        <h1 class="title section-title">{{ .title }}</h1>
         <div class="card">
           <div class="card-image">
-            <figure class="image is-4by3">
-              {{ with .image1 }}
-              <img src="{{ .src1 }}" alt="{{ .alt1 }}">
-              {{ end }}
+            <figure class="image is-2by1">
+              <img src="{{ .src }}" alt="{{ .alt }}">
             </figure>
           </div>
         </div>
+        {{ end }}
       </div>
       <!-- Column Two -->
       <div class="column is-centered-tablet-portrait">
-        {{ with .title2 }}<h1 class="title section-title">{{ . }}</h1>{{ end }}
-        {{/*  <h3 class="subtitle is-5 is-muted">{{ $subtitle }}</h3>  */}}
+        {{ with .photo2 }}
+        <h1 class="title section-title">{{ .title }}</h1>
         <div class="card">
           <div class="card-image">
-            <figure class="image is-4by3">
-              {{ with .image2 }}
-              <img src="{{ .src2 }}" alt="{{ .alt2 }}">
-              {{ end }}
+            <figure class="image is-2by1">
+              <img src="{{ .src }}" alt="{{ .alt }}">
             </figure>
           </div>
         </div>
+        {{ end }}
       </div>
       <div class="column is-centered-tablet-portrait">
-        {{ with .title3 }}<h1 class="title section-title">{{ . }}</h1>{{ end }}
-        {{/*  <h3 class="subtitle is-5 is-muted">{{ $subtitle }}</h3>  */}}
+        {{ with .photo3 }}
+        <h1 class="title section-title">{{ .title }}</h1>
         <div class="card">
           <div class="card-image">
-            <figure class="image is-4by3">
-              {{ with .image3 }}
-              <img src="{{ .src3 }}" alt="{{ .alt3 }}">
-              {{ end }}
+            <figure class="image is-2by1">
+              <img src="{{ .src }}" alt="{{ .alt }}">
             </figure>
           </div>
         </div>
+        {{ end }}
       </div>
     </div>
   </div>
