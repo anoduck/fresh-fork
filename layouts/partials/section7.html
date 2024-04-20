@@ -1,41 +1,21 @@
-{{/*  {{- $section2 := .Site.Params.section2 }}  */}}
-<section class="section is-medium" id="section7">
+<section class="section section-feature-grey is-medium" id="section7">
   <div class="container">
-    <div class="columns">
-      <div class="column is-centered-tablet-portrait">
-        {{ with .title }}<h1 class="title section-title">{{ . }}</h1>{{ end }}
-        {{/*  <h3 class="subtitle is-5 is-muted">{{ $subtitle }}</h3>  */}}
-        <div class="card">
-          <div class="card-image">
-            <figure class="image is-4by3">
-              {{ with .image }}
-              <img src="{{ .src }}" alt="{{ .alt }}">
-              {{ end }}
-            </figure>
+    <div class="title-wrapper has-text-centered">
+      <h2 class="title is-2">{{ .title }}</h2>
+      <h3 class="subtitle is-5 is-muted">{{ .subtitle }}</h3>
+      <div class="divider is-centered"></div>
+    </div>
+    <div class="content-wrapper">
+      <div class="columns">
+        <div class="column is-large">
+          <div class="card is-bordered has-text-left revealOnScroll delay-1" data-animation="fadeInLeft">
+            <div class="card-content">
+              <div class="card-text">
+                  <p>{{ .content }}</p>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="column is-7 mt-60">
-        <article class="media icon-box">
-          <div class="media-content mt-50">
-            {{ with .iconbox }}
-            <h3 class="icon-box-title title is-5">{{ .title }}</h3>
-            <div class="divider"></div>
-            <div class="content">
-              <p>
-                {{ with .content }}<p>{{ . | safeHTML }}</p>{{ end }}
-              </p>
-            </div>
-            {{ end }}
-          </div>
-        </article>
-        <p class="has-text-centered mt-20">
-          {{ with .button }}
-            <a class="button cta is-large rounded secondary-btn raised" href="{{ .link }}">
-              {{ .text }}
-          {{ end }}
-          </a>
-        </p>
       </div>
     </div>
   </div>
