@@ -1,28 +1,36 @@
-{{- $section3   := .Site.Params.section6 }}
-{{- $title      := index $section3 "title" }}
-{{- $subtitle   := index $section3 "subtitle" }}
-{{- $image      := index $section3 "image" }}
-{{- $buttonText := index $section3 "buttontext" }}
-{{- $buttonLink := index $section3 "buttonlink" }}
 <section class="section section-feature-grey is-medium" id="section6">
   <div class="container">
     <div class="columns">
       <div class="column is-10 is-offset-1">
         <div class="has-text-centered">
-          <img class="pushed-image" src="{{ printf "/images/%s" $image | relURL }}">
+          {{ with .image }}
+          <img class="pushed-image" src="{{ printf "/images/%s" . | relURL }}">
+          {{ end }}
         </div>
       </div>
     </div>
 
     <div class="title-wrapper has-text-centered">
-      <h2 class="title is-2">{{ $title }}</h2>
-      <h3 class="subtitle is-5 is-muted">{{ $subtitle }}</h3>
+      <h2 class="title is-2">{{ .title }}</h2>
+      <h3 class="subtitle is-5 is-muted">{{ .description }}</h3>
+    </div>
+    <div class="content-wrapper">
+      <div class="columns">
+        <div class="column is-large">
+          <p>{{ .content }}</p>
+        </div>
+      </div>
     </div>
     <p class="has-text-centered mt-20">
-      <a class="button cta is-large rounded secondary-btn raised" href="{{ $buttonLink }}">
-        {{ $buttonText }}
+      <a class="button cta is-large rounded secondary-btn raised" href="{{ .buttonLink }}">
+        {{ .buttonText }}
       </a>
     </p>
   </div>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gojs/3.0.0/go.js" integrity="sha512-TWM/07VK5NfYGiiRp3kLxq2erJTsPWPb6bWzuNQSY4w4thdNAIRmb0Rvsy2XiVnCvEjbCsXCyO89eF/RRZb4BQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  {{ if .Store.Get "hasMermaid" }}
+  <script type="module">
+    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.esm.min.mjs';
+    mermaid.initialize({ startOnLoad: true });
+  </script>
+{{ end }}
 </section>

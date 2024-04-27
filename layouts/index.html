@@ -15,18 +15,17 @@
     {{/*<!-- old section 7 -->*/}}
     {{ partial "section5" site.Data.section5 }}
     {{/*<!-- old section 3 -->*/}}
-    {{ if .Site.Params.section6 }}
-    {{ partial "section6.html" . }}
-    {{ end }}
+    {{ partial "section6" site.Data.section6 }}
+    
 
     {{ partial "timeline.html" site.Data.timeline }}
     {{/*<!-- old section 9 -->*/}}
     {{ partial "section7" site.Data.section7 }}
 
     {{/*<!-- old section 4 -->*/}}
-    {{ if .Site.Params.section8 }}
+    {{/* {{ if .Site.Params.section8 }} 
     {{ partial "section8.html" . }}
-    {{ end }}
+    {{ end }}*/}}
 
     {{ if .Site.Params.footer }}
     {{ partial "footer.html" . }}

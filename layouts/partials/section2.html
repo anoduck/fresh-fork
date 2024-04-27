@@ -38,6 +38,8 @@
         </div>
         {{ end }}
       </div>
+    </div>
+    <div class="columns">
       <div class="column is-centered-tablet-portrait">
         {{ with .photo3 }}
         <h1 class="title section-title">{{ .title }}</h1>
@@ -51,5 +53,12 @@
         {{ end }}
       </div>
     </div>
+    {{ with .button}}
+      <p class="has-text-centered mt-20">
+          <a class="button cta is-large rounded secondary-btn raised" href="{{ .link }}">
+            {{ .text }}
+          </a>
+      </p>
+      {{ end }}
   </div>
 </section>
