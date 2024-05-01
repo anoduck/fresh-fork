@@ -1,31 +1,42 @@
 <section class="section section-feature-grey is-medium" id="section6">
   <div class="container">
     <div class="columns">
-      <div class="column is-10 is-offset-1">
-        <div class="has-text-centered">
-          {{ with .image }}
-          <img class="pushed-image" src="{{ printf "/images/%s" . | relURL }}">
-          {{ end }}
+      <div class="column is-centered-tablet-portrait">
+        {{ with .title }}<h1 class="title section-title">{{ . }}</h1>{{ end }}
+        <div class="content-wrapper">
+          <div class="content">
+            <p>
+              {{ .content | safeHTML }}
+            </p>
+          </div>
         </div>
+        <div class="card">
+          <div class="card-image">
+            <figure class="image is-large">
+              {{ with .image }}
+                <img class="pushed-image" src="{{ printf "/images/%s" . | relURL }}">
+              {{ end }}
+            </figure>
+          </div>
+        </div>        
+        {{/* <div class="has-text-centered">
+            {{ with .image }}
+            <img class="pushed-image" src="{{ printf "/images/%s" . | relURL }}">
+            {{ end }}
+            </div>
+            <div class="title-wrapper has-text-centered">
+              <h2 class="title is-2">{{ .title }}</h2>
+              <h3 class="subtitle is-5 is-muted">{{ .description }}</h3>
+          </div>
+         </div>
+            </div> */}}
+        <p class="has-text-centered mt-20">
+          <a class="button cta is-large rounded secondary-btn raised" href="{{ .buttonLink }}">
+            {{ .buttonText }}
+          </a>
+        </p>
       </div>
     </div>
-
-    <div class="title-wrapper has-text-centered">
-      <h2 class="title is-2">{{ .title }}</h2>
-      <h3 class="subtitle is-5 is-muted">{{ .description }}</h3>
-    </div>
-    <div class="content-wrapper">
-      <div class="columns">
-        <div class="column is-large">
-          <p>{{ .content }}</p>
-        </div>
-      </div>
-    </div>
-    <p class="has-text-centered mt-20">
-      <a class="button cta is-large rounded secondary-btn raised" href="{{ .buttonLink }}">
-        {{ .buttonText }}
-      </a>
-    </p>
   </div>
   {{ if .Store.Get "hasMermaid" }}
   <script type="module">

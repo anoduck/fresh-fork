@@ -11,14 +11,11 @@
       {{- range $tiles }}
       <div class="columns">
         <div class="column is-two-third">
-          <div class="card is-bordered has-text-left revealOnScroll delay-1" data-animation="fadeInLeft">
+          <div class="card is-bordered has-text-left revealOnScroll delay-1" data-animation="fadeInLeft">            
             <div class="card-header">
               <div class="card-title card-header-title">
                 <h4>{{ .title }}</h4>
               </div>
-              <!-- <div class="card-icon card-header-icon">
-                  <img src="{{ printf "/images/%s.png" .icon | relURL }}">
-              </div> -->
             </div>
             <div class="card-content">
               <div class="card-text">

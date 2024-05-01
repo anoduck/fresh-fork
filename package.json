@@ -3,8 +3,9 @@
     "dependencies": {},
     "devDependencies": {}
   },
-  "dependencies": {},
-  "devDependencies": {},
+  "dependencies": {
+    "bulma-carousel": "^4.0.24"
+  },
   "name": "fresh-fork",
   "version": "0.1.0"
 }

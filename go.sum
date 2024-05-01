@@ -1,5 +1,9 @@
+github.com/CreativeBulma/bulma-collapsible v1.0.3 h1:gMB8y3d/66AKDMpsW7Yfk1T4WmYL5udAEAmh+XFq6tU=
+github.com/CreativeBulma/bulma-collapsible v1.0.3/go.mod h1:3gng6vw6PDL7ZZUoUm6yVhxhQ9YgaGeBb4ZivQhcBEY=
 github.com/VizuaaLOG/BulmaJS v0.0.0-20231221154335-093afa07bad8 h1:6Z19JyLdpymk+uWE8yt9vpQx6ICemoZW1TnJrXk688s=
 github.com/VizuaaLOG/BulmaJS v0.0.0-20231221154335-093afa07bad8/go.mod h1:ALFjy8PsSq0OcPsCwGHfOmnCBOb3lmen1ajaEjBodKU=
+github.com/Wikiki/bulma-carousel v4.0.24+incompatible h1:tFP2kktkt20n56FpSn0nG4xn+X8YNbOCwiln/dNjBSo=
+github.com/Wikiki/bulma-carousel v4.0.24+incompatible/go.mod h1:9v+UXcSvOW+lZYfdEakHCNu+pv3lMOKFC67uhqHJiXc=
 github.com/Wikiki/bulma-timeline v3.0.5+incompatible h1:RvFAK7NR5Q3jl8v+aHePVTLX2qZtWxLSZovG0Hnpyc4=
 github.com/Wikiki/bulma-timeline v3.0.5+incompatible/go.mod h1:SFQ62EY9Xzck78ir0QNEb1abB9Z2xlrmgYORD4w2EVY=
 github.com/jgthms/bulma v0.0.0-20220508134905-3e00a8e6d0d0 h1:d61c8CjPFq6aGikBXMepfewc8/3IbrTCiC1xHcMcvHI=

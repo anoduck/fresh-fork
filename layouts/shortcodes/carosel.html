@@ -1,0 +1,24 @@
+{{- $file := . -}}
+{{- $photos := $file.photos -}}
+<!-- Start Carousel -->
+<div id="bulma-carousel" class="carousel">
+	{{- range $photos -}}
+	<h1 class="title section-title">{{ .title }}</h1>
+	<div class="card">
+		<div class="card-image">
+			<figure class="image is-2by1">
+				<a href="{{ .src }}">
+					<img src="{{ .src }}" alt="{{ .alt }}">
+				</a>
+			</figure>
+		</div>
+	</div>
+	{{- end -}}
+</div>
+<!-- End Carousel -->
+<script>
+bulmaCarousel.attach('#bulma-carousel', {
+	slidesToScroll: 1,
+	slidesToShow: 4
+});
+</script>
