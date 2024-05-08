@@ -12,7 +12,6 @@
     <br>
     <br>
     <div class="columns">
-      <!-- Column One -->
       <div class="column is-centered-tablet-portrait">
         {{ with .photo1 }}
         <h1 class="title section-title">{{ .title }}</h1>
@@ -25,7 +24,9 @@
         </div>
         {{ end }}
       </div>
-      <!-- Column Two -->
+    </div>
+    <div class="columns">
+      <!-- Column One -->
       <div class="column is-centered-tablet-portrait">
         {{ with .photo2 }}
         <h1 class="title section-title">{{ .title }}</h1>
@@ -38,8 +39,7 @@
         </div>
         {{ end }}
       </div>
-    </div>
-    <div class="columns">
+      <!-- Column Two -->
       <div class="column is-centered-tablet-portrait">
         {{ with .photo3 }}
         <h1 class="title section-title">{{ .title }}</h1>
@@ -59,6 +59,6 @@
             {{ .text }}
           </a>
       </p>
-      {{ end }}
+    {{ end }}
   </div>
 </section>

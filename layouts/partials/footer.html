@@ -3,6 +3,7 @@
 {{- $quickLinks  := index $footer "quicklinks" }}
 {{- $socialMedia := index $footer "socialmedia" }}
 {{- $bulmaLogo   := index $footer "bulmalogo" }}
+{{- $legal       := index $footer "legal" }}
 {{- $socialMediaTitle    := index $footer "socialmediatitle" }}
 <footer class="footer footer-dark">
   <div class="container">
@@ -12,46 +13,42 @@
           <img src="{{ printf "/images/logos/%s" $logo | relURL }}">
         </div>
       </div>
+      <div class="column">
+        {{ with $legal }}
+        <div class="footer-column">
+          <div class="footer-header">
+            <h3>{{ .title }}</h3>
+          </div>
+          <div class="card is-bordered has-text-centered">            
+            <div class="card-content">
+              <div class="card-text">
+                  <p>{{ .content }}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        {{ end }}
+      </div>
       {{- range $quickLinks }}
         <div class="column">
           <div class="footer-column">
-            <div class="footer-header">
+            <div class="footer-header has-text-right">
                 <h3>{{ .title }}</h3>
             </div>
-            <ul class="link-list">
-              {{- range .links }}
-              <li>
-                <a href="{{ .link }}">
-                  {{ .text }}
-                </a>
-              </li>
-              {{- end }}
-            </ul>
+            <div class="level-right">
+              <ul class="link-list has-text-right">
+                {{- range .links }}
+                <li>
+                  <a class="level-item" href="{{ .link }}">
+                    {{ .text }}
+                  </a>
+                </li>
+                {{- end }}
+              </ul>
+            </div>
           </div>
         </div>
       {{- end }}
-      <div class="column">
-        <div class="footer-column">
-          <div class="footer-header">
-            <h3>{{ $socialMediaTitle }}</h3>
-            <nav class="level is-mobile">
-              <div class="level-left">
-                {{- range $socialMedia }}
-                <a class="level-item" href="{{ .link }}">
-                  <span class="icon"><i class="fa fa-{{ .icon }}"></i></span>
-                </a>
-                {{- end }}
-              </div>
-            </nav>
-
-            {{- if $bulmaLogo }}
-            <a href="https://bulma.io" target="_blank">
-              <img src="{{ "/images/logos/made-with-bulma.png" | relURL }}" alt="Made with Bulma" width="128" height="24">
-            </a>
-            {{- end }}
-          </div>
-        </div>
-      </div>
     </div>
   </div>
 </footer>

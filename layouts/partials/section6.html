@@ -1,8 +1,16 @@
+{{- $file := . -}}
+{{- $banner := $file.banner -}}
 <section class="section section-feature-grey is-medium" id="section6">
   <div class="container">
+    <div class="title-wrapper has-text-centered">
+      {{ with $banner }}
+        <h2 class="title is-2">{{ .title }}</h2>
+        <h3 class="subtitle is-5 is-muted">{{ .subtitle }}</h3>
+        <div class="divider is-centered"></div>
+      {{ end }}
+    </div>
     <div class="columns">
       <div class="column is-centered-tablet-portrait">
-        {{ with .title }}<h1 class="title section-title">{{ . }}</h1>{{ end }}
         <div class="content-wrapper">
           <div class="content">
             <p>
@@ -10,26 +18,11 @@
             </p>
           </div>
         </div>
-        <div class="card">
-          <div class="card-image">
-            <figure class="image is-large">
-              {{ with .image }}
-                <img class="pushed-image" src="{{ printf "/images/%s" . | relURL }}">
-              {{ end }}
-            </figure>
-          </div>
-        </div>        
-        {{/* <div class="has-text-centered">
-            {{ with .image }}
+        <figure class="image is-5by3 is-centered">
+          {{ with .image }}
             <img class="pushed-image" src="{{ printf "/images/%s" . | relURL }}">
-            {{ end }}
-            </div>
-            <div class="title-wrapper has-text-centered">
-              <h2 class="title is-2">{{ .title }}</h2>
-              <h3 class="subtitle is-5 is-muted">{{ .description }}</h3>
-          </div>
-         </div>
-            </div> */}}
+          {{ end }}
+        </figure>
         <p class="has-text-centered mt-20">
           <a class="button cta is-large rounded secondary-btn raised" href="{{ .buttonLink }}">
             {{ .buttonText }}
@@ -38,10 +31,4 @@
       </div>
     </div>
   </div>
-  {{ if .Store.Get "hasMermaid" }}
-  <script type="module">
-    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.esm.min.mjs';
-    mermaid.initialize({ startOnLoad: true });
-  </script>
-{{ end }}
 </section>

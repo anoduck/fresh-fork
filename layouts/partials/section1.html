@@ -1,5 +1,6 @@
 {{- $file := . -}}
-{{- $tiles := $file.tiles -}}
+{{- $lefttiles := $file.leftTiles -}}
+{{- $righttiles := $file.rightTiles -}}
 <section class="section section-feature-grey is-medium" id="section1">
   <div class="container">
     <div class="title-wrapper has-text-centered">
@@ -8,10 +9,10 @@
       <div class="divider is-centered"></div>
     </div>
     <div class="content-wrapper">
-      {{- range $tiles }}
-      <div class="columns">
-        <div class="column is-two-third">
-          <div class="card is-bordered has-text-left revealOnScroll delay-1" data-animation="fadeInLeft">            
+      <div class="columns is-multiline is-mobile is-2 is-variable">
+        {{- range $lefttiles }}
+        <div class="column is-half">
+          <div class="card is-bordered has-text-left revealOnScroll delay-1" data-animation="fadeInLeft", style="min-height: 160px">            
             <div class="card-header">
               <div class="card-title card-header-title">
                 <h4>{{ .title }}</h4>
@@ -24,8 +25,24 @@
             </div>
           </div>
         </div>
+        {{- end }}
+        {{- range $righttiles }}
+        <div class="column is-half">
+          <div class="card is-bordered has-text-left revealOnScroll delay-1" data-animation="fadeInLeft", style="min-height: 160px">            
+            <div class="card-header">
+              <div class="card-title card-header-title">
+                <h4>{{ .title }}</h4>
+              </div>
+            </div>
+            <div class="card-content">
+              <div class="card-text">
+                  <p>{{ .content }}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        {{- end }}
       </div>
-      {{- end }}
       {{ with .button}}
       <p class="has-text-centered mt-20">
           <a class="button cta is-large rounded secondary-btn raised" href="{{ .link }}">
