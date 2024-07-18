@@ -1,0 +1,13 @@
+{{ if not (.Page.Scratch.Get "mermaid") }}
+<!-- Include mermaid only first time -->
+<script src="https://cdn.jsdelivr.net/npm/mermaid@8.7.0/dist/mermaid.min.js" crossorigin="anonymous"
+        onerror="cdnFB(this, '{{ "js/thirdParty/mermaid.min.js" | relURL }}')"></script>
+{{ .Page.Scratch.Set "mermaid" true }}
+{{ end }}
+<p class="mermaid{{ with (.Get "class") }} {{ . }}{{ end }}" align="center">{{- .Inner -}}</p>
+<script>
+	function cdnFB(element, source) {
+		element.onerror = null;
+		element.href = source;
+	}
+</script>

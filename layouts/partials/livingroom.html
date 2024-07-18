@@ -1,7 +1,6 @@
 {{- $file := . -}}
-{{- $lefttiles := $file.leftTiles -}}
-{{- $righttiles := $file.rightTiles -}}
-<section class="section section-feature-grey is-medium" id="section1">
+{{- $tiles := $file.tiles -}}
+<section class="section section-feature-grey is-medium" id="livingroom">
   <div class="container">
     <div class="title-wrapper has-text-centered">
       {{ with .title }}<h2 class="title is-3 is-size-2">{{ . }}</h2>{{ end }}
@@ -10,24 +9,8 @@
     </div>
     <div class="content-wrapper">
       <div class="columns is-multiline is-mobile is-2 is-variable">
-        {{- range $lefttiles }}
-        <div class="column is-half">
-          <div class="card is-bordered has-text-left revealOnScroll delay-1" data-animation="fadeInLeft", style="min-height: 160px">            
-            <div class="card-header">
-              <div class="card-title card-header-title">
-                <h4>{{ .title }}</h4>
-              </div>
-            </div>
-            <div class="card-content">
-              <div class="card-text">
-                  <p>{{ .content }}</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        {{- end }}
-        {{- range $righttiles }}
-        <div class="column is-half">
+        {{- range $tiles }}
+        <div class="column is-one-half">
           <div class="card is-bordered has-text-left revealOnScroll delay-1" data-animation="fadeInLeft", style="min-height: 160px">            
             <div class="card-header">
               <div class="card-title card-header-title">

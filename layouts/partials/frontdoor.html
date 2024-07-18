@@ -1,0 +1,19 @@
+<section class="section section-frontdoor is-medium" id="frontdoor">
+  <div class="container">
+    <div class="title-wrapper has-text-centered">
+        {{ with .title }}<h2 class="title is-2">{{ . }}</h2>{{ end }}
+        <h3 class="subtitle is-5 is-muted">{{ .subtitle }}</h3>
+        <div class="divider is-centered"></div>
+    </div>
+    <article class="message is-medium mt-6">
+      {{ with .body }}<div class="message-body">{{ . }}</div>{{ end }}
+    </article>
+    {{ with .button}}
+    <p class="has-text-centered mt-20">
+        <a class="button cta is-large rounded secondary-btn raised" href="{{ .link }}">
+          {{ .text }}
+        </a>
+    </p>
+    {{ end }}
+  </div>
+</section>

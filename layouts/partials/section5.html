@@ -2,8 +2,14 @@
   <div class="container">
     <div class="columns">
       <div class="column is-centered-tablet-portrait">
-        {{ with .title }}<h1 class="title section-title">{{ . }}</h1>{{ end }}
-        {{/*  <h3 class="subtitle is-5 is-muted">{{ $subtitle }}</h3>  */}}
+        <div class="title-wrapper has-text-centered">
+          {{ with .title }}<h1 class="title section-title">{{ . }}</h1>{{ end }}
+        </div>
+        <div class="divider is-centered"></div>
+      </div>
+    </div>  
+    <div class="columns">
+      <div class="column is-centered-tablet-portrait">
         <div class="card">
           <div class="card-image">
             <figure class="image is-4by3">

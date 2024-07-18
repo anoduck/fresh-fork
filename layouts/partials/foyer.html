@@ -1,0 +1,73 @@
+<section class="section section-secondary is-medium" id="foyer">
+  <div class="container">
+    <div class="columns">
+      <div class="column has-text-centered is-centered-tablet-portrait">
+        {{ with .title }}<h2 class="title is-2">{{ . }}</h2>{{ end }}
+        {{ with .subtitle }}<h3 class="subtitle is-5 is-muted">{{ . }}</h3>{{ end }}
+        <div class="divider is-centered"></div>  
+      </div>
+    </div>
+    <div class="columns">
+      <!-- Column One -->
+      <div class="column is-centered-tablet-portrait">
+        {{ with .leftcol }}
+        <div class="card">
+          <div class="card-image">
+            <figure class="image is-square">
+              <a data-lightbox="gallery" href="{{ .image }}"><img src="{{ .image }}" alt="{{ .alt }}"/></a>
+            </figure>
+          </div>
+          <div class="card-footer">
+            <p class="card-footer-item">
+              <span>
+                {{ .caption }}
+              </span>
+            </p>
+          </div>
+        </div>
+        {{ end }}
+      </div>
+      <!-- Column Two -->
+      <div class="column is-centered-tablet-portrait is-half">
+        {{ with .middlecol }}
+        <div class="card mt-4 mb-4">
+          <div class="card-content">
+            <p>{{ .body1 }}</p>
+          </div>
+        </div>
+        <div class="card mt-4 mb-4">
+          <div class="card-content">
+            <p>{{ .body2 }}</p>
+          </div>
+        </div>
+        {{ end }}
+      </div>
+      <!-- Column Third -->
+      <div class="column is-centered-tablet-portrait">
+        {{ with .rightcol }}
+        <div class="card">
+          <div class="card-image">
+            <figure class="image is-square">
+              <a data-lightbox="gallery" href="{{ .image }}"><img src="{{ .image }}" alt="{{ .alt }}"/></a>
+            </figure>
+          </div>
+          <div class="card-footer">
+            <p class="card-footer-item">
+              <span>
+                {{ .caption }}
+              </span>
+            </p>
+          </div>
+        </div>
+        {{ end }}
+      </div>
+    </div>
+    {{ with .button}}
+      <p class="has-text-centered mt-4 mb-4">
+          <a class="button cta is-large rounded secondary-btn raised" href="{{ .link }}">
+            {{ .text }}
+          </a>
+      </p>
+    {{ end }}
+  </div>
+</section>

@@ -12,17 +12,23 @@
     <div class="columns">
       <div class="column is-centered-tablet-portrait">
         <div class="content-wrapper">
-          <div class="content">
+          <div class="content has-text-centered">
             <p>
               {{ .content | safeHTML }}
             </p>
           </div>
         </div>
-        <figure class="image is-5by3 is-centered">
-          {{ with .image }}
-            <img class="pushed-image" src="{{ printf "/images/%s" . | relURL }}">
-          {{ end }}
-        </figure>
+      </div>
+    </div>
+    <div class="columns">
+      <div class="column is-centered-tablet-portrait is-12">
+        <div class="mermaid" align="center">
+          {{ .graph }}
+        </div>
+      </div>
+    </div>
+    <div class="columns">
+      <div class="column is-centered-tablet-portrait">
         <p class="has-text-centered mt-20">
           <a class="button cta is-large rounded secondary-btn raised" href="{{ .buttonLink }}">
             {{ .buttonText }}

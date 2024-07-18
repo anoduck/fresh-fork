@@ -1,20 +1,16 @@
 <section class="section section-secondary is-medium" id="section2">
   <div class="container">
-    <div class="title-wrapper has-text-centered">
+    <div class="title-wrapper has-text-centered mb-6">
       {{ with .banner }}
       <h2 class="title is-2">{{ .title }}</h2>
       <h3 class="subtitle is-5 is-muted">{{ .subtitle }}</h3>
       <div class="divider is-centered"></div>
       {{ end }}
     </div>
-    <!-- Yes, I am this old...it is sad, isn't it. -->
-    <br>
-    <br>
-    <br>
-    <div class="columns">
+    <div class="columns mt-6">
       <div class="column is-centered-tablet-portrait">
         {{ with .photo1 }}
-        <h1 class="title section-title">{{ .title }}</h1>
+        <h1 class="title section-title has-text-centered">{{ .title }}</h1>
         <div class="card">
           <div class="card-image">
             <figure class="image is-2by1">
@@ -25,11 +21,11 @@
         {{ end }}
       </div>
     </div>
-    <div class="columns">
+    <div class="columns mt-6">
       <!-- Column One -->
       <div class="column is-centered-tablet-portrait">
         {{ with .photo2 }}
-        <h1 class="title section-title">{{ .title }}</h1>
+        <h1 class="title section-title has-text-centered">{{ .title }}</h1>
         <div class="card">
           <div class="card-image">
             <figure class="image is-2by1">
@@ -39,10 +35,12 @@
         </div>
         {{ end }}
       </div>
+    </div>
+    <div class="columns mt-6">
       <!-- Column Two -->
-      <div class="column is-centered-tablet-portrait">
+      <div class="column is-centered-tablet-portrait mt-12">
         {{ with .photo3 }}
-        <h1 class="title section-title">{{ .title }}</h1>
+        <h1 class="title section-title has-text-centered">{{ .title }}</h1>
         <div class="card">
           <div class="card-image">
             <figure class="image is-2by1">
@@ -54,7 +52,7 @@
       </div>
     </div>
     {{ with .button}}
-      <p class="has-text-centered mt-20">
+      <p class="has-text-centered mt-6">
           <a class="button cta is-large rounded secondary-btn raised" href="{{ .link }}">
             {{ .text }}
           </a>

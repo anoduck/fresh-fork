@@ -13,6 +13,9 @@ Section Styles
     &.section-secondary {
         background-color: $grey-red-2;
     }
+    &.section-frontdoor {
+        background-color: $blue-grey
+    }
     &.section-half {
         height: 75vh !important;
     }

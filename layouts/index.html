@@ -4,8 +4,13 @@
     {{ partial "hero.html" . }}
     {{ end }}
 
-    {{/*<!-- Old section 1 -->*/}}
-    {{ partial "section1" site.Data.section1 }}
+    {{/* <!-- first is the frontdoor --> */}}
+    {{ partial "frontdoor" site.Data.frontdoor }}
+    {{/* <!-- new foyer section --> */}}
+    {{ partial "foyer" site.Data.foyer }}
+    {{/*<!-- old section 1 -->*/}}
+    {{/*  {{ partial "section1" site.Data.section1 }}  */}}
+    {{ partial "livingroom" site.Data.livingroom }}
     {{/*<!-- old section 8 -->*/}}
     {{ partial "section2" site.Data.section2 }}
     {{/*<!-- old section 2 -->*/}}
