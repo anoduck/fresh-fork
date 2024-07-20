@@ -11,8 +11,11 @@ module:
 
 googleAnalytics: # Put in your tracking code without quotes like this: UA-XXX for universal tracking or G-XXX analytics v4 tracking
 # Disables warnings
-disableKinds:
-- taxonomy
+# disableKinds:
+# - taxonomy
+
+taxonomies:
+  tag: tags
 
 markup:
   goldmark:
@@ -225,3 +228,14 @@ params:
           link: /blog/first
         - text: Tech articles
           link: /blog/second
+  frames:
+    - "frontdoor"
+    - "foyer"
+    - "livingroom"
+    - "section2"
+    - "section3"
+    - "section4"
+    - "section5"
+    - "section6"
+    - "timeline"
+    - "section7"

@@ -1,9 +1,14 @@
 {{ define "main" }}
 
+    {{/*  {{- $partial_data := partial . site.Data.({{.}}) -}}  */}}
+
     {{ if .Site.Params.hero }}
     {{ partial "hero.html" . }}
     {{ end }}
 
+    {{/*  {{ range .Site.Params.sections }}
+        {{ $partial_data . }}
+    {{ end }}  */}}
     {{/* <!-- first is the frontdoor --> */}}
     {{ partial "frontdoor" site.Data.frontdoor }}
     {{/* <!-- new foyer section --> */}}

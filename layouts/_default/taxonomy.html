@@ -1,0 +1,44 @@
+{{ define "main" }}
+
+{{- $frames := .Site.Params.frames -}}
+{{- $datafiles := site.Data -}}
+{{- $file := . -}}
+
+    
+{{ partial "navbar.html" . }}
+{{ partial "navbar-clone.html" . }}
+
+<section class="section is-medium">
+    <div class="container">
+        <div class="columns">
+            <div class="column is-centered-tablet-portrait">
+            <h1 class="title section-title">{{ .Title }}</h1>
+            <h5 class="subtitle is-5 is-muted">{{ .Params.Subtitle }}</h5>
+            <div class="divider"></div>
+        </div>
+        </div>
+        <div class="content">
+            {{ .Content }}
+            {{ range $frames }}
+                {{ $frame := . }}
+                {{- $frameURL := printf "%s#%s" .Site.BaseURL $frame -}}
+                {{ $datafile := printf "%s.%s" site.Data $frame }}
+                {{/*  <h2><a href="{{ .Page.RelPermalink }}">{{ .Page.LinkTitle }}</a> ({{ .Count }})</h2>  */}}
+                <h2><a href="{{ $frameURL }}">{{ $frame }}</a> ({{ .Count }})</h2>
+                <ul>
+                    {{ range $datafile.tags }}
+                        <li><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></li>
+                    {{ end }}
+                </ul>
+            {{ end }}
+        </div>
+    </div>
+</section>
+{{ if .Site.Params.footer }}
+{{ partial "footer.html" . }}
+{{ end }}
+
+{{ if .Site.Params.sidebar }}
+{{ partial "sidebar.html" . }}
+{{ end }}
+{{ end }}
