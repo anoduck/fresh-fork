@@ -228,14 +228,3 @@ params:
           link: /blog/first
         - text: Tech articles
           link: /blog/second
-  frames:
-    - "frontdoor"
-    - "foyer"
-    - "livingroom"
-    - "section2"
-    - "section3"
-    - "section4"
-    - "section5"
-    - "section6"
-    - "timeline"
-    - "section7"
